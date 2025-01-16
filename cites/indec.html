@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifa Managers Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sifa Managers site</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#items">Items</a>
+            <a href="#sales">Sales</a>
+            <a href="#purchase">Purchase</a>
+            <a href="#payment">Payment</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Sifa Managers Site!</h2>
+        <p>Browse through our products, make purchases, and use secure payment methods.</p>
+    </section>
+    
+    <section id="items">
+        <div class="items-list-section">
+            <h1>Items</h1>
+            <div id="items-container">
+                <!-- Example items will be dynamically displayed here -->
+            </div>
+        </div>
+    
+        <div class="add-new-item-section">
+            <h2>Add New Item</h2>
+            <form id="add-item-form">
+                <div class="form-group">
+                    <label for="item-name">Item Name:</label>
+                    <input id="item-name" type="text" placeholder="Enter item name" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-code">Item Code:</label>
+                    <input id="item-code" type="text" placeholder="Enter item code" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-category">Category:</label>
+                    <input id="item-category" type="text" placeholder="Enter category" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-description">Description:</label>
+                    <input id="item-description" type="text" placeholder="Enter description" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-buying-price">Buying Price (KES):</label>
+                    <input id="item-buying-price" type="number" placeholder="Enter buying price" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-selling-price">Selling Price (KES):</label>
+                    <input id="item-selling-price" type="number" placeholder="Enter selling price" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-profit">Profit (KES):</label>
+                    <input id="item-profit" type="text" readonly placeholder="Profit will be calculated automatically">
+                </div>
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="sales">
+        <h2>Sales</h2>
+        <form id="sales-form">
+            <label for="product">Select Product:</label>
+            <select id="product">
+                <option value="">Select an item</option>
+            </select>
+    
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" required>
+    
+            <button type="submit">Record Sale</button>
+        </form>
+        <div id="sales-message"></div>
+    </section>
+
+    <section id="purchase">
+        <h2>Purchase</h2>
+        <p>Make a purchase by selecting an item and quantity.</p>
+        <form id="purchase-form">
+            <label for="purchase-product">Select Product:</label>
+            <select id="purchase-product">
+                <option value="">Select an item</option>
+            </select>
+
+            <label for="purchase-quantity">Quantity:</label>
+            <input type="number" id="purchase-quantity" min="1" required>
+
+            <button type="submit">Purchase</button>
+        </form>
+        <div id="purchase-message"></div>
+    </section>
+
+    <section id="payment">
+        <h2>Payment</h2>
+        <form id="payment-form">
+            <label for="payment-method">Payment Method:</label>
+            <input type="radio" id="cash" name="payment-method" value="cash" required> Cash
+            <input type="radio" id="mpesa" name="payment-method" value="mpesa" required> M-Pesa
+    
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required>
+    
+            <label for="mpesa-number">M-Pesa Till Number:</label>
+            <input type="text" id="mpesa-number" value="666666" readonly>
+    
+            <button type="submit">Make Payment</button>
+        </form>
+        <div id="payment-message"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

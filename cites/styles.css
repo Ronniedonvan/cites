@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url('img/hotel.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    background-color: #9b0505;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(196, 191, 191);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    overflow: auto;
+}
+
+/* Items List Section */
+.items-list-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.items-list-section h1 {
+    text-align: center;
+    color: #333;
+}
+
+#items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.item-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.item-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Add New Item Section */
+.add-new-item-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.add-new-item-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.add-new-item-section .form-group {
+    margin-bottom: 15px;
+}
+
+.add-new-item-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-new-item-section input,
+.add-new-item-section textarea,
+.add-new-item-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-new-item-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-new-item-section button:hover {
+    background-color: #45a049;
+}
